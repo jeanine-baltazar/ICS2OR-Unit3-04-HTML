@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <html lang="en-ca">
+    <head>
+      <meta charset="utf-8">
+      <meta name="description"content="Calculating the area of a trapezoid.">
+      <meta name="keywords"content= "Hello, World!, Area, Trapezoid.">
+      <meta name="author"content= "Jeanine Baltazar">
+      <meta name="viewport"content="width=device-width, initial-scale=1.0">
+      <title>Jeanine's Webpage</title>
+      <link rel="stylesheet" href="mystyle.css">
+      <script>
+      //This declares variables
+        let trapezoidBaseA, trapezoidBaseB, trapezoidHeight, trapezoidArea;
+        function calculate ()
+        {
+          /*This makes the document take the value in the imput called "baseA" which is located 
+          in the form named "calculator" and assign it as the value of trapezoidBaseA. */
+          trapezoidBaseA=document.calculator.baseA.value;
+          //This turns the variable into a number.
+          trapezoidBaseA = +trapezoidBaseA;
+          //These next two lines of code do the same as the previous, except for different variables.
+          trapezoidBaseB=document.calculator.baseB.value;
+          trapezoidHeight=document.calculator.height.value;
+          //This turns the variable into a number.
+          trapezoidBaseB = +trapezoidBaseB;
+          //This script tells the program how to calculate the trapezoidArea
+          trapezoidArea= ((trapezoidBaseA+trapezoidBaseB)/2)*trapezoidHeight;
+          /*This tells the program that the value of the input named "result" located in the form 
+          named "calculator" should be the trapezoidArea.*/
+          document.calculator.result.value=trapezoidArea;
+        }
+      </script>
+    </head>
+    <body>
+      <form name="calculator">
+        <h1>Trapezoid Area Calculator</h1>
+        <p id="explination">
+          Hello, World! This website will help you to calculate the area of any trapezoid. Simply just enter the values
+          of the variables below, then click the calculate button to recieve your answer in the area box.
+        </p>
+        <p id="title">Base (a):</p>
+        <input type="text" name="baseA" id="input"><br><br>
+        <p id="title">Base (b):</p>
+        <input type="text" name="baseB" id="input"><br><br>
+        <p id="title">Height (h):</p>
+        <input type="text" name="height" id="input"><br><br>
+        <p id="title">Area (A):</p>
+        <input name="result" id="input"><br><br>
+        <input type="button" value="Calculate" id="title" onclick="calculate()">
+      </form>
+    </body>
+</html>

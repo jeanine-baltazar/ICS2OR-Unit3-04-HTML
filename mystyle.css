@@ -1,0 +1,47 @@
+body {
+  background-color:rgb(255, 230, 238);
+}
+h1 {
+  text-align:center;
+  background-color:white;
+  padding:10px;
+  border:1px solid black;
+  width:700px;
+  margin-left:auto;
+  margin-right:auto;
+}
+#explination {
+  background-color:rgb(255, 230, 238);
+  padding:10px;
+  width:700px;
+  margin-left:auto;
+  margin-right:auto;
+  font-size:110%;
+  font-family: serif
+}
+#title {
+  font-weight: bold;
+  font-size:135%;
+  background-color:rgb(255, 230, 238);
+  width:120px;
+  height:35px;
+  padding:5px;
+  text-align:center;
+  margin-left:40px;
+  font-family: serif
+}
+#input {
+  width:715px;
+  height:35px;
+  margin-left:40px;
+  font-size:120%;
+}
+form {
+  background-color:rgb(255, 179, 203);
+  padding:10px;
+  width:800px;
+  height:900px;
+  margin-left:auto;
+  margin-right:auto;
+  border:1px solid black;
+}
